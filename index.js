@@ -12,6 +12,9 @@ app.use('/user', dbroutes);
 
 let port = process.env.PORT || 3000;
 
+app.get('/',(req,res)=>{
+res.send("hello");})
+
 mongoose.connect(process.env.url).then(() => {
   console.log("connected to mongodb");
   app.listen(port, () => {
