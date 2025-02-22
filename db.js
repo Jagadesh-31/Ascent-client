@@ -1,4 +1,4 @@
-let userModel = require('/user');
+let userModel = require('./user');
 
 let addUser = async (req, res) => {
     let user = {
