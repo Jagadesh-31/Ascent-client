@@ -8,7 +8,7 @@ let addUser = async (req, res) => {
     };
     try {
         let addRes = await userModel.create(user);
-        res.status(201).json(addRes);
+        res.send("hello");
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
