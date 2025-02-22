@@ -1,5 +1,5 @@
 let express = require('express');
-let { addUser, findUser, updateUser, deleteUser } = require('/db.js');  
+let { addUser, findUser, updateUser, deleteUser } = require('./db.js');  
 
 let dbroutes = express.Router();
 dbroutes.post('/addUser', addUser);
