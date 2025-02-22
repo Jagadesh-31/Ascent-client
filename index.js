@@ -1,7 +1,7 @@
 let express = require('express');
 let mongoose = require('mongoose');
 let cors = require('cors');
-let dbroutes = require('./userRouter.js');
+let dbroutes = require('./userRouter');
 require('dotenv').config();
 
 let app = express();
